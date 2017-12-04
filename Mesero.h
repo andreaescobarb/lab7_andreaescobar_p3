@@ -12,7 +12,7 @@ class Mesero : public Personal{
 	protected:
 		vector<string> listaPlatillos;
 	public:
-		Mesero(vector<string>);
+		Mesero(string,string,string,int,int,int,int,int,vector<string>);
 		Mesero();
 		vector<string> getListaPlatillos();
 		void setListaPlatillos(string);

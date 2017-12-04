@@ -11,7 +11,7 @@ class Lavaplatos : public Personal{
 	protected:
 		int motivacion;
 	public:
-		Lavaplatos(int);
+		Lavaplatos(string,string,string,int,int,int,int,int,int);
 		Lavaplatos();
 		int getMotivacion();
 		void setMotivacion(int);

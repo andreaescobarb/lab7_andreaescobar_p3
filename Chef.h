@@ -11,7 +11,7 @@ class Chef : public Personal{
 	protected:
 		string platillo;
 	public:
-		Chef(string);
+		Chef(string,string,string,int,int,int,int,int,string);
 		Chef();
 		string getPlatillo();
 		void setPlatillo(string);

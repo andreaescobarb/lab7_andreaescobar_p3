@@ -12,7 +12,7 @@ class Administrador : public Personal{
 		int contratados;
 		int despedidos;
 	public:
-		Administrador(int,int);
+		Administrador(string,string,string,int,int,int,int,int,int,int);
 		Administrador();
 		int getContratados();
 		void setContratados(int);

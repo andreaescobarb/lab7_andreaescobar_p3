@@ -12,7 +12,7 @@ class Personal : public Usuario{
 		int contratacion;
 		int sueldo;
 	public:
-		Personal(int,int);
+		Personal(string,string,string,int,int,int,int,int);
 		Personal();
 		int getContratacion();
 		void setContratacion(int);

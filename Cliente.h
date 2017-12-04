@@ -12,7 +12,7 @@ class Cliente : public Usuario{
 		string direccion;
 		int rating;
 	public:
-		Cliente(string,int);
+		Cliente(string,string,string,int,int,int,string,int);
 		Cliente();
 		string getDireccion();
 		void setDireccion(string);

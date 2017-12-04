@@ -1,6 +1,6 @@
 #include "Mesero.h"
 
-Mesero::Mesero(vector<string> listaPlatillos):Personal(contratacion,sueldo){
+Mesero::Mesero(string username,string password,string nombre,int edad,int id,int telefono,int contratacion, int sueldo,vector<string> listaPlatillos):Personal(username,password, nombre,edad, id, telefono, contratacion,sueldo){
 	this->listaPlatillos=listaPlatillos;
 }
 Mesero::Mesero(){
