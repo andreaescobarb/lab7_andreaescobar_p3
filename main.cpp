@@ -357,3 +357,36 @@ int aumentoLavap(Usuario* lp){
 bool renuncioLP(Usuario* lp){
 
 }
+
+void gritarLP(vector<Usuario*> users){
+
+  int opc, humilliate;
+  for (int i = 0; i < users.size(); i++) {
+    if (dynamic_cast<Lavaplatos*>(users.at(i))) {
+      cout<<i<<"- "<<users.at(i)->getNombre()<<endl;
+    }
+  }
+
+  cout<<"Ingrese a quien desea gritarle: ";
+  cin>>opc;
+  cout<<"Ingrese el nivel de humillacion ";
+  cin>>humilliate;
+  Lavaplatos* l = dynamic_cast<Lavaplatos*>(users.at(opc));
+  l->setMotivacion(d->getMotivacion()-humilliate);
+}
+
+void agradarLP(vector<Usuario*> users){
+  int opc,nice;
+  for (int i = 0; i < users.size(); i++) {
+    if (dynamic_cast<Lavaplatos*>(users.at(i))) {
+      cout<<i<<"- "<<users.at(i)->getNombre()<<endl;
+    }
+  }
+
+  cout<<"Ingrese la posicion de quien desea agradar: ";
+  cin>>opc;
+  cout<<"ingrese el nivel de agrado: ";
+  cin>>nice;
+  Lavaplatos* l = dynamic_cast<Lavaplatos*>(users.at(opc));
+  l->setMotivacion(d->getMotivacion()+nice);
+}
