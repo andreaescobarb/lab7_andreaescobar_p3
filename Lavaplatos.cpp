@@ -1,7 +1,13 @@
-#ifndef Lavaplatos_h
-#define Lavaplatos_h
+#include "Lavaplatos.h"
 
-class Lavaplatos: public Personal{
+Lavaplatos::Lavaplatos(int motivacion): Personal(int contratacion,int sueldo){
+	this->motivacion=motivacion;
+}
+Lavaplatos::Lavaplatos(){
 
-};
-#endif
+}void Lavaplatos::setMotivacion(int motivacion){
+   this-> motivacion=motivacion;
+}
+int Lavaplatos::getMotivacion(){
+   return motivacion;
+}

@@ -1,24 +1,24 @@
-#ifndef Cliente_h
-#define Cliente_h
-
-#include <string>
 #include <iostream>
+#include <string>
+#include <vector>
+#include "Usuario.h"
 
-class Cliente: public Usuario{
-  private:
-    string direccion;
-    int rating;
+using namespace std;
 
-  public:
-    Cliente();
-    Cliente(string, int):
+#ifndef CLIENTE_H
+#define CLIENTE_H
+class Cliente : public Usuario{
+	protected:
+		string direccion;
+		int rating;
+	public:
+		Cliente(string,int);
+		Cliente();
+		string getDireccion();
+		void setDireccion(string);
 
-    string getDireccion();
-    void setDireccion();
+		int getRating();
+		void setRating(int);
 
-    int getRating();
-    void setDireccion();
-
-    ~Cliente();
 };
 #endif

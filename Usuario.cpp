@@ -1,57 +1,48 @@
 #include "Usuario.h"
 
+Usuario::Usuario(string username,string password,string nombre,int edad,int id,int telefono){
+	this->username=username;
+	this->password=password;
+	this->nombre=nombre;
+	this->edad=edad;
+	this->id=id;
+	this->telefono=telefono;
+}
 Usuario::Usuario(){
 
+}void Usuario::setUsername(string username){
+   this-> username=username;
 }
-
-Usuario::Usuario(string username, string password, string nombre, int edad, int id, int telefono){
-  this->username=username;
-  this->password=password;
-  this->nombre=nombre;
-  this->edad=edad;
-  this->id=id;
-  this->telefono=telefono;
+string Usuario::getUsername(){
+   return username;
 }
-
-string Usuario::getUsername(string username){
-  return username;
-}
-
-void Usuario::setUsername(string username){
-  this->username=username;
-}
-
-string Usuario::getPassword(string password){
-  return password;
-}
-
 void Usuario::setPassword(string password){
-  this->password=password;
+   this-> password=password;
 }
-
-string Usuario::getNombre(string nombre){
-  return nombre;
+string Usuario::getPassword(){
+   return password;
 }
-
 void Usuario::setNombre(string nombre){
-  this->nombre=nombre;
+   this-> nombre=nombre;
 }
-int Usuario::getEdad(int edad){
-  return edad;
+string Usuario::getNombre(){
+   return nombre;
 }
-
 void Usuario::setEdad(int edad){
-  this->nombre=nombre;
+   this-> edad=edad;
 }
-
-int Usuario::getId(int id){
-  return id;
+int Usuario::getEdad(){
+   return edad;
 }
-
 void Usuario::setId(int id){
-  this->id=id;
+   this-> id=id;
 }
-
-Usuario::~Usuario(){
-  
+int Usuario::getId(){
+   return id;
+}
+void Usuario::setTelefono(int telefono){
+   this-> telefono=telefono;
+}
+int Usuario::getTelefono(){
+   return telefono;
 }

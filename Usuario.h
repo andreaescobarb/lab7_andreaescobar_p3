@@ -1,39 +1,39 @@
-#ifndef Usuario_h
-#define Usuario_h
-
-#include <string>
 #include <iostream>
+#include <string>
+#include <vector>
 
+using namespace std;
+
+#ifndef USUARIO_H
+#define USUARIO_H
 class Usuario{
-    private:
-      string username;
-      string password;
-      string nombre;
-      int edad, id, telefono;
+	protected:
+		string username;
+		string password;
+		string nombre;
+		int edad;
+		int id;
+		int telefono;
+	public:
+		Usuario(string,string,string,int,int,int);
+		Usuario();
+		string getUsername();
+		void setUsername(string);
 
-    public:
-      Usuario();
-      Usuario(string, string, string, int, int, int);
+		string getPassword();
+		void setPassword(string);
 
-      string getUsername();
-		  void setUsername(string);
+		string getNombre();
+		void setNombre(string);
 
-		  string getPassword();
-		  void setPassword(string);
+		int getEdad();
+		void setEdad(int);
 
-		  string getNombre();
-		  void setNombre(string);
+		int getId();
+		void setId(int);
 
-      int getEdad();
-      void setEdad();
-
-      int getId();
-      void setID();
-
-      int getTelefono();
-      void setTelefono();
-
-      ~Usario();
+		int getTelefono();
+		void setTelefono(int);
 
 };
 #endif

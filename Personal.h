@@ -1,21 +1,24 @@
-#ifndef Personal_h
-#define Personal_h
+#include <iostream>
+#include <string>
+#include <vector>
+#include "Usuario.h"
 
-class Personal: public Usuario{
-  private:
-    int ano, sueldo;
+using namespace std;
 
-  public:
-    Personal():
-    Personal(int, int);
+#ifndef PERSONAL_H
+#define PERSONAL_H
+class Personal : public Usuario{
+	protected:
+		int contratacion;
+		int sueldo;
+	public:
+		Personal(int,int);
+		Personal();
+		int getContratacion();
+		void setContratacion(int);
 
-    int getAno();
-    void setAno();
-
-    int getSueldo();
-    void setSueldo();
-
-    ~Personal();
+		int getSueldo();
+		void setSueldo(int);
 
 };
 #endif
