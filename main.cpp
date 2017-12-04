@@ -22,6 +22,8 @@ vector<Usuario*> fire(vector<Usuario*> , Usuario*);
 bool lavaplatosSalario(int);
 int aumentoLavap(Usuario*);
 bool renuncioLP(Usuario*);
+void gritarLP(vector<Usuario*> users)
+void agradarLP(vector<Usuario*> users)
 
 
 using namespace std;
@@ -65,7 +67,7 @@ int main(){
           case 1:{//comienza del case 1 sub menu
             char resp='s';
             while(resp=='s'||resp=='S'){
-              cout<<"               CUENTA DE CLIENTE<<endl<<________________________________________________________"<<endl;
+              cout<<"               CUENTA DE CLIENTE"<<endl<<"________________________________________________________"<<endl;
 
               string username="", password="", nombre="", direccion="";
               int edad=0, id=0, tel=0, rate=0;
@@ -355,7 +357,15 @@ int aumentoLavap(Usuario* lp){
   return money;
 }
 bool renuncioLP(Usuario* lp){
-
+  bool quit = false;
+  int motivation=0;
+  if (dynamic_cast<Lavaplatos*>(lp)) {
+    motivation=dynamic_cast<Lavaplatos*>(lp)->getMotivacion();
+    if (motivation<=25) {
+      quit = true;
+    }
+  }
+  return quit;
 }
 
 void gritarLP(vector<Usuario*> users){
