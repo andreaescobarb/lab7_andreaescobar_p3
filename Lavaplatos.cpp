@@ -13,9 +13,33 @@ int Lavaplatos::getMotivacion(){
 }
 
 string Lavaplatos::toString(){
-
+	stringstream st;
+	string conversion;
+	char tip ='L';
+	st<<tip;
+	st<<",";
+	st<<username;
+	st<<",";
+	st<<password;
+	st<<",";
+	st<<nombre;
+	st<<",";
+	st<<edad;
+	st<<",";
+	st<<id;
+	st<<",";
+	st<<telefono;
+	st<<",";
+	st<<contratacion;
+	st<<",";
+	st<<sueldo;
+	st<<",";
+	st<<motivacion;
+	st<<";";
+	conversion=st.str();
+	return conversion;
 }
 
 Lavaplatos::~Lavaplatos(){
-	
+
 }

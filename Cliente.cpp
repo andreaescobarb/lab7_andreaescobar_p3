@@ -20,7 +20,30 @@ int Cliente::getRating(){
 }
 
 string Cliente::toString(){
+	stringstream st;
+	string conversion;
+	char tip ='B';
+	st<<tip;
+	st<<",";
+	st<<username;
+	st<<",";
+	st<<password;
+	st<<",";
+	st<<nombre;
+	st<<",";
+	st<<edad;
+	st<<",";
+	st<<id;
+	st<<",";
+	st<<telefono;
+	st<<",";
+	st<<direccion;
+	st<<",";
+	st<<rating;
+	st<<";";
 
+	conversion=st.str();
+	return conversion;
 }
 
 Cliente::~Cliente(){

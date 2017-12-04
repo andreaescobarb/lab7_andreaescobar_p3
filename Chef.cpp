@@ -13,7 +13,32 @@ string Chef::getPlatillo(){
 }
 
 string Chef::toString(){
+	stringstream st;
+	string conversion;
+	char tip ='C';
+	st<<tip;
+	st<<",";
+	st<<username;
+	st<<",";
+	st<<password;
+	st<<",";
+	st<<nombre;
+	st<<",";
+	st<<edad;
+	st<<",";
+	st<<id;
+	st<<",";
+	st<<telefono;
+	st<<",";
+	st<<contratacion;
+	st<<",";
+	st<<sueldo;
+	st<<",";
+	st<<platillo;
+	st<<";";
 
+	conversion=st.str();
+	return conversion;
 }
 
 Chef::~Chef(){

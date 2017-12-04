@@ -40,7 +40,30 @@ void Mesero::deliver(){
 }
 
 string Mesero::toString(){
+	stringstream st;
+	string conversion;
+	char tip ='A';
+	st<<tip;
+	st<<",";
+	st<<username;
+	st<<",";
+	st<<password;
+	st<<",";
+	st<<nombre;
+	st<<",";
+	st<<edad;
+	st<<",";
+	st<<id;
+	st<<",";
+	st<<telefono;
+	st<<",";
+	st<<contratacion;
+	st<<",";
+	st<<sueldo;
+	st<<";";
 
+	conversion=st.str();
+	return conversion;
 }
 
 Mesero::~Mesero(){
