@@ -20,5 +20,7 @@ class Cliente : public Usuario{
 		int getRating();
 		void setRating(int);
 
+		virtual string toString();
+
 };
 #endif

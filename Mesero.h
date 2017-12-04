@@ -17,5 +17,6 @@ class Mesero : public Personal{
 		vector<string> getListaPlatillos();
 		void setListaPlatillos(string);
 
+		virtual string toString();
 };
 #endif

@@ -8,6 +8,8 @@
 #include "Chef.h"
 #include "Mesero.h"
 
+#include <fstream>
+
 bool mayorDeEdad(int);
 double promedioRating();
 

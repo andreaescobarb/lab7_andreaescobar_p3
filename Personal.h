@@ -20,5 +20,7 @@ class Personal : public Usuario{
 		int getSueldo();
 		void setSueldo(int);
 
+		virtual string toString();
+
 };
 #endif

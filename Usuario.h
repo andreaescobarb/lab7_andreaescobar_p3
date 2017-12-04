@@ -35,5 +35,7 @@ class Usuario{
 		int getTelefono();
 		void setTelefono(int);
 
+		virtual string toString();
+
 };
 #endif

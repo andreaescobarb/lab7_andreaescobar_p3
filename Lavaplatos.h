@@ -16,5 +16,7 @@ class Lavaplatos : public Personal{
 		int getMotivacion();
 		void setMotivacion(int);
 
+		virtual string toString();
+
 };
 #endif
