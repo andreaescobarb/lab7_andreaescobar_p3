@@ -19,6 +19,10 @@ vector<string> menorSalario(vector<Usuario*>);
 vector<string> mayorSalario(vector<Usuario*>);
 vector<Usuario*> agregarPersonal(vector<Usuario*> , Usuario*);
 vector<Usuario*> fire(vector<Usuario*> , Usuario*);
+bool lavaplatosSalario(int);
+int aumentoLavap(Usuario*);
+bool renuncioLP(Usuario*);
+
 
 using namespace std;
 
@@ -103,7 +107,7 @@ int main(){
           case 2:{//comienza del case 2 sub menu
             char resp = 's';
             while(resp=='s'||resp=='S'){
-              cout<<"               CUENTA DE ADMINISTRADOR<<endl<<________________________________________________________"<<endl;
+              cout<<"               CUENTA DE ADMINISTRADOR"<<endl<<"________________________________________________________"<<endl;
 
               string username="", password="", nombre="";
               int edad=0, id=0, tel=0, ano=0, sueldo=0;
@@ -253,7 +257,7 @@ vector<Usuario*> agregarPersonal(vector<Usuario*> users, Usuario* personas){
   while (resp=='s'||resp=='S') {
     cont++;
     cout<<"             MENU DE EMPLEADOS"<<endl;
-    //cout<<"____________________________________________________"<<endl;
+    cout<<"____________________________________________________"<<endl;
     cout<<"1- Chef"<<endl<<"2- Lavaplato"<<endl<<"3- Mesero"<<endl;
     cin>>op;
     while (op<0||op>3) {
@@ -328,4 +332,28 @@ vector<Usuario*> fire(vector <Usuario*> users, Usuario* persona){
   users.erase(users.begin()+pos);
   dynamic_cast<Administrador*>(persona)->setDespedidos(dynamic_cast<Administrador*>(persona)->getDespedidos()+1);
   return users;
+}
+bool lavaplatosSalario(int motivacion){
+  bool aumento=false;
+  if (motivacion>=100) {
+    aumento=true;
+  }
+  return aumento;
+}
+int aumentoLavap(Usuario* lp){
+  int money=0;
+  cout<<"Ingrese la cantidad de dinero que desea aumentar"<<endl;
+  cin>>money;
+  if (dynamic_cast<Lavaplatos*>(lp)) {
+    Lavaplatos* lp1 = dynamic_cast<Lavaplatos*>(lp);
+    int salario = lp1->getSueldo();
+    while (money>=salario) {
+      cout<<"Lo sentimos! Mucho aumento. Ingresa una cantidad menor a la de tu salario actual"<<endl;
+      cin>>money;
+    }
+  }
+  return money;
+}
+bool renuncioLP(Usuario* lp){
+
 }
