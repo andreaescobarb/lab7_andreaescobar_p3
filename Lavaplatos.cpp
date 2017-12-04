@@ -1,6 +1,6 @@
 #include "Lavaplatos.h"
 
-Lavaplatos::Lavaplatos(int motivacion): Personal(int contratacion,int sueldo){
+Lavaplatos::Lavaplatos(int motivacion): Personal(contratacion,sueldo){
 	this->motivacion=motivacion;
 }
 Lavaplatos::Lavaplatos(){

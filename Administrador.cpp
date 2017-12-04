@@ -1,6 +1,6 @@
 #include "Administrador.h"
 
-Administrador::Administrador(int contratados,int despedidos): Personal(int contratacion,int sueldo){
+Administrador::Administrador(int contratados,int despedidos): Personal(contratacion,sueldo){
 	this->contratados=contratados;
 	this->despedidos=despedidos;
 }

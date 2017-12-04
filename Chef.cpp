@@ -1,6 +1,6 @@
 #include "Chef.h"
 
-Chef::Chef(string platillo): Personal(int contratacion,int sueldo){
+Chef::Chef(string platillo): Personal(contratacion,sueldo){
 	this->platillo=platillo;
 }
 Chef::Chef(){

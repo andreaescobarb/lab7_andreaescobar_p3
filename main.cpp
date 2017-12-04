@@ -9,6 +9,8 @@
 #include "Mesero.h"
 
 bool mayorDeEdad(int);
+double promedioRating();
+
 
 using namespace std;
 
@@ -24,4 +26,8 @@ bool mayorDeEdad(int edad){
     age = true;
   }
   return age;
+}
+
+double promedioRating(){
+  
 }
