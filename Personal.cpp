@@ -18,3 +18,10 @@ void Personal::setSueldo(int sueldo){
 int Personal::getSueldo(){
    return sueldo;
 }
+
+string Personal::toString(){
+
+}
+Personal::~Personal(){
+	
+}

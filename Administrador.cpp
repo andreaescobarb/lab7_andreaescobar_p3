@@ -18,3 +18,11 @@ void Administrador::setDespedidos(int despedidos){
 int Administrador::getDespedidos(){
    return despedidos;
 }
+
+string Administrador::toString(){
+
+}
+
+Administrador::~Administrador(){
+
+}

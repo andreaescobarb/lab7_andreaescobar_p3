@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include "Usuario.h"
+#include <sstream>
 
 using namespace std;
 
@@ -20,7 +21,10 @@ class Personal : public Usuario{
 		int getSueldo();
 		void setSueldo(int);
 
+		//funcion para escribir un soString y poder escrbir archivo
 		virtual string toString();
+		//destructor
+		virtual ~Personal();
 
 };
 #endif

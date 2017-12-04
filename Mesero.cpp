@@ -11,3 +11,38 @@ Mesero::Mesero(){
 vector<string> Mesero::getListaPlatillos(){
    return listaPlatillos;
 }
+
+void Mesero::deliver(){
+	for (int i = 0; i < listaPlatillos.size(); i++) {
+		cout<<i<<"- "<<listaPlatillos.at(i)<<endl;
+	}
+	cout<<"Ingrese opcion"<<endl;
+	cout<<"1- Entregar un platillo especifico"<<endl<<"2- Entregar todos los platillos"<<endl;
+
+	int opc;
+	cin>>opc;
+	while (opc>2||opc<1) {
+		cout<<"Opcion erronea, ingrese opcion de nuevo"<<endl;
+		cin>>opc;
+	}
+	if (opc==1) {
+		cout<<"Ingrese posicion de platillo en la lista"<<endl;
+		int pos;
+		cin>>pos;
+
+		listaPlatillos.erase(listaPlatillos.begin()+pos);
+	} else{
+		for (int i = 0; i < listaPlatillos.size(); i++) {
+			listaPlatillos.erase(listaPlatillos.begin()+i);
+		}
+	}
+
+}
+
+string Mesero::toString(){
+
+}
+
+Mesero::~Mesero(){
+
+}

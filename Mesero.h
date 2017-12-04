@@ -3,6 +3,7 @@
 #include <vector>
 #include "Personal.h"
 #include "Usuario.h"
+#include <sstream>
 
 using namespace std;
 
@@ -16,7 +17,11 @@ class Mesero : public Personal{
 		Mesero();
 		vector<string> getListaPlatillos();
 		void setListaPlatillos(string);
+		void deliver();
 
+		//funcion para escribir un soString y poder escrbir archivo
 		virtual string toString();
+		//destructor
+		virtual ~Mesero();
 };
 #endif

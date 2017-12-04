@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <sstream>
 
 using namespace std;
 
@@ -35,7 +36,10 @@ class Usuario{
 		int getTelefono();
 		void setTelefono(int);
 
+		//funcion para escribir un soString y poder escrbir archivo
 		virtual string toString();
 
+		//destructor
+		virtual ~Usuario();
 };
 #endif

@@ -18,3 +18,11 @@ void Cliente::setRating(int rating){
 int Cliente::getRating(){
    return rating;
 }
+
+string Cliente::toString(){
+
+}
+
+Cliente::~Cliente(){
+
+}

@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include "Personal.h"
+#include <sstream>
 
 using namespace std;
 
@@ -20,5 +21,9 @@ class Administrador : public Personal{
 		int getDespedidos();
 		void setDespedidos(int);
 
+		//funcion para escribir un soString y poder escrbir archivo
+		virtual string toString();
+		//destructor
+		virtual ~Administrador();
 };
 #endif

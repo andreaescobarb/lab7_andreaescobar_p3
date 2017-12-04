@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include "Personal.h"
+#include <sstream>
 
 using namespace std;
 
@@ -15,6 +16,12 @@ class Chef : public Personal{
 		Chef();
 		string getPlatillo();
 		void setPlatillo(string);
+
+		//funcion para escribir un soString y poder escrbir archivo
+		virtual string toString();
+
+		//destructor
+		virtual ~Chef();
 
 };
 #endif

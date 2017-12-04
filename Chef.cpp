@@ -11,3 +11,11 @@ Chef::Chef(){
 string Chef::getPlatillo(){
    return platillo;
 }
+
+string Chef::toString(){
+
+}
+
+Chef::~Chef(){
+
+}

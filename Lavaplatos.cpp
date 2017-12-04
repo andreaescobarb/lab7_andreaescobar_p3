@@ -11,3 +11,11 @@ Lavaplatos::Lavaplatos(){
 int Lavaplatos::getMotivacion(){
    return motivacion;
 }
+
+string Lavaplatos::toString(){
+
+}
+
+Lavaplatos::~Lavaplatos(){
+	
+}

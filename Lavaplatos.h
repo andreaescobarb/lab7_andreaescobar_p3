@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include "Personal.h"
+#include <sstream>
 
 using namespace std;
 
@@ -17,6 +18,8 @@ class Lavaplatos : public Personal{
 		void setMotivacion(int);
 
 		virtual string toString();
+		//destructor
+		virtual ~Lavaplatos();
 
 };
 #endif

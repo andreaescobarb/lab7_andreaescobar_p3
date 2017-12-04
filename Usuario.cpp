@@ -46,3 +46,11 @@ void Usuario::setTelefono(int telefono){
 int Usuario::getTelefono(){
    return telefono;
 }
+
+string Usuario::toString(){
+	
+}
+
+Usuario::~Usuario(){
+
+}
