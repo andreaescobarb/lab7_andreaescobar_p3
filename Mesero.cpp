@@ -1,13 +1,13 @@
 #include "Mesero.h"
 
-Mesero::Mesero(vector<Usuario*> listaPlatillos):Personal(int contratacion,int sueldo){
+Mesero::Mesero(vector<string> listaPlatillos):Personal(int contratacion,int sueldo){
 	this->listaPlatillos=listaPlatillos;
 }
 Mesero::Mesero(){
 
-}void Mesero::setListaPlatillos(Usuario* ClistaPlatillos){
+}void Mesero::setListaPlatillos(string ClistaPlatillos){
    this-> listaPlatillos.push_back(ClistaPlatillos);
 }
-vector<Usuario*> Mesero::getListaPlatillos(){
+vector<string> Mesero::getListaPlatillos(){
    return listaPlatillos;
 }

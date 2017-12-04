@@ -7,7 +7,7 @@ using namespace std;
 
 #ifndef ADMINISTRADOR_H
 #define ADMINISTRADOR_H
-class Administrador : Personal{
+class Administrador : public Personal{
 	protected:
 		int contratados;
 		int despedidos;

@@ -10,12 +10,12 @@ using namespace std;
 #define MESERO_H
 class Mesero : public Personal{
 	protected:
-		vector<Usuario*> listaPlatillos;
+		vector<string> listaPlatillos;
 	public:
-		Mesero(vector<Usuario*>);
+		Mesero(vector<string>);
 		Mesero();
-		vector<Usuario*> getListaPlatillos();
-		void setListaPlatillos(Usuario*);
+		vector<string> getListaPlatillos();
+		void setListaPlatillos(string);
 
 };
 #endif
